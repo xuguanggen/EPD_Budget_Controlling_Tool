@@ -1,0 +1,17 @@
+<!DOCTYPE validators PUBLIC
+        "-//Apache Struts//XWork Validator 1.0.2//EN"
+        "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<!-- 校验Action的email属性 -->
+	<field name="perID">
+		<field-validator type="requiredstring">
+			<message>Please input Person ID</message>
+		</field-validator>
+	</field>
+	<field name="pwd">
+		<field-validator type="requiredstring">
+			<message>Please input Password</message>
+		</field-validator>
+	</field>
+</validators>
+

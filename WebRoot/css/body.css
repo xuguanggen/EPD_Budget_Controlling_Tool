@@ -1,0 +1,423 @@
+<
+style type    ="text /css"><!--body {
+	font-family: Arial;
+}
+
+#container {
+	border: 0px red solid;
+	font-family: Arial;
+	margin: 0 auto;
+	min-width: 980px;
+}
+
+#head {
+	border: 0px blue solid;
+	width: 100%;
+	float: left;
+	height: 80px;
+}
+
+#content {
+	float: left;
+	border: 0px green solid;
+	height: 70%;
+	width: 100%;
+	margin-top: 10px;
+}
+
+#sidebar {
+	float: left;
+	width: 12%;
+	font-family: Arial;
+	border: 0px red solid;
+}
+
+#display {
+	float: right;
+	font-family: Arial;
+	font-size: 15px;
+	height: 65%;
+	width: 88%;
+}
+
+#footer {
+	float: left;
+	margin-top: 5px;
+	height: 25px;
+	border: 0px red solid;
+	width: 100%;
+}
+
+#title {
+	border: 0px red solid;
+	height: 25px;
+	color: #003b69;
+	font-weight: bold;
+	font-size: 16px;
+}
+#employee{
+    margin:-20px 0px 30px 60%	
+}
+#info {
+	border: 0px green solid;
+	color: red;
+	float: right;
+	font-size: 13px;
+}
+
+#nortable {
+	width: 100%;
+	border: 1px #cccccc solid;
+	height: 504px;
+}
+
+#nortable  table tr {
+	height: 38px;
+	color: #003b69;
+	font-size: 13px;"
+}
+
+#nortable .calib table tr {
+	height: 32px;
+}
+
+.formFieldError {
+	color: red;
+}
+
+#nortable .prodisplay {
+	border: 0px red solid;
+}
+
+#nortable .prodisplay  table tr{
+	height: 33px;
+}
+
+#nortable .search {
+	border: 0px red solid;
+	height: 50px;
+}
+
+#nortable .return {
+	border: 0px green solid;
+	height: 433px;
+	width: 100%;
+}
+
+#nortable .return table {
+	width: 100%;
+	text-align: center;
+	border: 0px green solid;
+}
+
+#nortable .return table tr {
+	height: 35.7px;
+	color: black;
+}
+
+#nortable .update {
+	border: 0px green solid;
+	height: 452px;
+	width: 100%;
+}
+
+
+#nortable .update table {
+	width: 100%;
+	text-align: center;
+	border: 0px green solid;
+}
+
+#nortable .update table tr {
+	height: 32.7px;
+	color: black;
+}
+
+#nortable .update table thead tr{
+	color:white;
+	font-size: 13px;
+	background: #295D89;
+}
+#nortable .update table tbody tr:HOVER td {
+	background-color: #99ff99;
+}
+#nortable .return table tbody tr:HOVER td {
+	background-color: #99ff99;
+}
+
+#nortable .userinfo {
+	border: 0px green solid;
+	height: 42px;
+	text-align: center;
+}
+#nortable .usersearch {
+	border: 0px green solid;
+	height: 55px;
+}
+#nortable .borrow {
+	float: left;
+	margin-top: 5px;
+	border: 0px green solid;
+	width: 50%;
+}
+
+#nortable .borrowtitle {
+	border-top: 1px #cccccc solid;
+	border-bottom: 1px #cccccc solid;
+	height: 30px;
+	font-weight: bold;
+	font-size: 16px;
+	color: #003b69;
+}
+
+#nortable .borrow .formFieldError {
+	font-family: arial;
+	font-size: 13px;
+	color: #FF3300;
+}
+
+#nortable .borrowinfo {
+	float: left;
+	width: 49.6%;
+	height: 375px;
+	text-align: center;
+	border-left: 1px #cccccc solid;
+}
+
+#comtable {
+	width: 100%;
+	border: 1px #cccccc solid;
+	text-align: center;
+	height: 3820%;
+}
+#comtable .booktitle{
+	float:left;
+	width:350px;
+	margin-left:350px;
+	font-size:20px;
+	border: 0px red solid;
+}
+#comtable .error{
+	float:left;
+	width:380px;
+	color: red;
+	margin-top:5px;
+	border: 0px red solid;
+}
+#comtable table {
+	width: 100%;
+}
+
+#comtable table thead tr{
+	font-size: 13px;
+	background: #295D89;
+	color: white;
+}
+#comtable  table tr {
+	height: 39.8px;
+}
+#comtable table tbody{
+	font-size: 12px;
+}
+
+
+#comtable .book tr {
+	height: 39.8px;
+}
+#comtable .bookdele tr {
+	height: 36.7px;
+}
+
+
+
+
+
+a:link {
+	color: #335C81;
+	TEXT-DECORATION: none;
+}
+
+a:visited {
+	color: #335C81;
+	TEXT-DECORATION: none;
+}
+
+a:hover {
+	COLOR: green;
+	TEXT-DECORATION: none;
+}
+
+
+#copytable {
+	width: 100%;
+	border: 1px #cccccc solid;
+	text-align: center;
+	height: 2800%;
+}
+#copytable .booktitle{
+	float:left;
+	width:350px;
+	margin-left:350px;
+	font-size:20px;
+	border: 0px red solid;
+}
+#copytable .error{
+	float:left;
+	width:380px;
+	color: red;
+	margin-top:5px;
+	border: 0px red solid;
+}
+#copytable table {
+	width: 100%;
+}
+
+#comtable table thead tr{
+	font-size: 13px;
+	background: #295D89;
+	color: white;
+}
+#copytable  table tr {
+	height: 30px;
+}
+#copytable table tbody{
+	font-size: 12px;
+}
+
+
+
+#copytable .book tr {
+	height: 39.8px;
+}
+#copytable .bookdele tr {
+	height: 36.7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tpmtable {
+	width: 100%;
+	border: 1px #cccccc solid;
+	text-align: center;
+	height:3500%;
+}
+#tpmtable .booktitle{
+	float:left;
+	width:350px;
+	margin-left:350px;
+	font-size:20px;
+	border: 0px red solid;
+}
+#tpmtable .error{
+	float:left;
+	width:380px;
+	color: red;
+	margin-top:5px;
+	border: 0px red solid;
+}
+#tpmtable table {
+	width: 100%;
+}
+
+#tpmtable table thead tr{
+	font-size: 13px;
+	background: #295D89;
+	color: white;
+}
+#tpmtable  table tr {
+	height: 39.8px;
+}
+#tpmtable table tbody{
+	font-size: 12px;
+}
+
+
+#tpmtable .book tr {
+	height: 39.8px;
+}
+#tpmtable .bookdele tr {
+	height: 36.7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+#filltable {
+	width: 100%;
+	border: 1px #cccccc solid;
+	text-align: center;
+	height: 3500%;
+}
+#filltable .booktitle{
+	float:left;
+	width:350px;
+	margin-left:350px;
+	font-size:20px;
+	border: 0px red solid;
+}
+#filltable .error{
+	float:left;
+	width:380px;
+	color: red;
+	margin-top:5px;
+	border: 0px red solid;
+}
+#filltable table {
+	width: 100%;
+}
+
+#filltable table thead tr{
+	font-size: 13px;
+	background: #295D89;
+	color: white;
+}
+#filltable  table tr {
+	height: 39.8px;
+}
+#filltable table tbody{
+	font-size: 12px;
+}
+
+
+#filltable .book tr {
+	height: 39.8px;
+}
+#filltable .bookdele tr {
+	height: 36.7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+</
+style
+>

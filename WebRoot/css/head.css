@@ -1,0 +1,48 @@
+<
+style type     ="text /css"><!--
+div{
+	
+}
+#hed {
+	background-color: #295D89;
+	font-family: arial;
+	height: 80px;
+	color: white;
+}
+
+
+.titleLeft {
+	border: 0px red solid;
+	float: left;
+	width: 12%;
+}
+
+.titleCenter {
+	float: left;
+	border: 0px red solid;
+	line-height: 80px;
+	width: 75%;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.titleRight {
+	float: left;
+	height: 80px;
+	width: 13%;
+}
+
+.imgLeft{
+	 width:100%;
+	 height:80px;
+}
+.imgRight {
+	height: 78px;
+	width:100%;
+	border: 1px #295D89 solid;
+}
+-->
+</
+style
+>

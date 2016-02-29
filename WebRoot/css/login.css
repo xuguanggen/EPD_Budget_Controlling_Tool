@@ -1,0 +1,80 @@
+<
+style type   ="text /css"><!--
+#login{
+	
+}
+.logintable{
+	width:90%;
+	font-family: arial;
+}
+.user {
+	width: 98%;
+	font-size: 13px;
+}
+
+.admin {
+	width: 98%;
+	font-size: 13px;
+}
+
+.formFieldError {
+	color: red;
+}
+
+.logo {
+	width: 80%;
+	font-size: 25px;
+}
+
+.ulogin {
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: #295D89;
+	height: 20px;
+}
+
+.alogin {
+	background-color: #295D89;
+	height: 20px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+}
+
+.email {
+	width: 50%;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	background-color: #295D89;
+}
+
+.notice {
+	width: 50%;
+	font-family: arial;
+	font-size: 12px;
+	font-weight: bold;
+	color: white;
+	background-color: #B5351F;
+}
+
+a:link {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+a:visited {
+	COLOR: #FFFFFF;
+	TEXT-DECORATION: none;
+}
+
+a:hover {
+	COLOR: #FFFFFF;
+	text-decoration: underline;
+}
+-->
+</
+style
+>

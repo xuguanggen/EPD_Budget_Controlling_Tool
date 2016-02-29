@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<constant name="struts.action.excludePattern" value="/dwr/*"></constant>
+	<constant name="struts.action.excludePattern" value="/chart/DisplayChart/*"></constant>
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" />
+	<package name="struts2" namespace="/" extends="struts-default">	
+		
+		<action name="SectionChartAction" class="com.xgg.epd.actions.SectionChartAction">
+			<result name="success">/WEB-INF/page/Sectionbarview.jsp</result>
+			<result name="AdminSuccess">/WEB-INF/page/SectionAdminDetail.jsp</result>
+		</action>
+		<action name="AdminAllocateProAction" class="com.xgg.epd.actions.AdminAllocateProAction">
+			<result name="success">/WEB-INF/page/adminAllocatePro.jsp</result>		
+			<result name="allocateSuccess">/WEB-INF/page/allocatesuccess.jsp</result>
+		</action>
+		
+		<action name="ServiceNrChartAction" class="com.xgg.epd.actions.ServiceNrChartAction">
+			<result name="success">/WEB-INF/page/barview.jsp</result>
+		</action>
+		<action name="SetRateAction" class="com.xgg.epd.actions.SetRateAction">
+			<result name="success">/WEB-INF/page/adminRate.jsp</result>
+		</action> 
+		
+		<action name="AddProjectAction" class="com.xgg.epd.actions.AddProjectAction">
+			<result name="success">/WEB-INF/page/ProjectInfo.jsp</result>
+			<result name="mod_pro_success" type="chain">
+				<param name="method">showAll</param>
+				<param name="actionName">showProjectAction</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="DeadLineAction" class="com.xgg.epd.actions.DeadLineAction">
+			<result name="success">/WEB-INF/page/adminRate.jsp</result>
+		</action>
+		<action name="InitProAction" class="com.xgg.epd.actions.InitProAction">
+		    <result name="success">/WEB-INF/page/adminFillMC.jsp</result>
+		</action>
+		<action name="EmailAction" class="com.xgg.epd.actions.EmailAction">
+			<result name="success">/WEB-INF/page/adminEmail.jsp</result>
+		</action>
+		
+		<action name="uploadAction" class="com.xgg.epd.actions.UploadAction">
+			<result name="success">/WEB-INF/page/success.jsp</result>
+		</action>
+		<action name="userloginAction" class="com.xgg.epd.actions.UserLoginAction">
+			<result name="input">/WEB-INF/page/userLogin.jsp</result>
+			<result name="associate">/WEB-INF/page/employeeHome.jsp</result>
+			<result name="admin">/WEB-INF/page/adminHome.jsp</result>
+			<result name="tpm">/WEB-INF/page/tpmHome.jsp</result>
+			<result name="guest">/WEB-INF/page/guestHome.jsp</result>
+		</action>
+		<action name="AdminNavigateTo" class="com.xgg.epd.actions.AdminNavigateTo">
+			<result name="show">/WEB-INF/page/adminChart.jsp</result>
+			<result name="fillMonthlyControlling">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="addemp">/WEB-INF/page/adminAddEmp.jsp</result>
+			<result name="addpro">/WEB-INF/page/AddPro.jsp</result>
+			<result name="showmine">/WEB-INF/page/showMyChart.jsp</result>
+			<result name="adminback">/WEB-INF/page/AdminFunction.jsp</result>
+			<result name="tpmback">/WEB-INF/page/TpmFunction.jsp</result>
+			<result name="upload">/WEB-INF/page/adminUpload.jsp</result>
+			<result name="adminAddPro">/WEB-INF/page/adminAddPro.jsp</result>
+			<result name="adminAddServiceNr">/WEB-INF/page/adminAddServiceNr.jsp</result>
+			<result name="adminRate">/WEB-INF/page/adminRate.jsp</result>
+			<result name="adminResetPwd">/WEB-INF/page/adminResetPwd.jsp</result>
+			<result name="tpmResetPwd">/WEB-INF/page/tpmResetPwd.jsp</result>
+			<result name="tpmFillMC">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="tpmChart">/WEB-INF/page/tpmChart.jsp</result>
+			<result name="adminCorrect">/WEB-INF/page/adminCorrect.jsp</result>
+			<result name="adminCalendar">/WEB-INF/page/adminSetCalendar.jsp</result>
+			<result name="empFillMC">/WEB-INF/page/empFillMC.jsp</result>
+			<result name="empNotFill">/WEB-INF/page/empCannotFill.jsp</result>
+			<result name="adminNotFill">/WEB-INF/page/adminCannotFill.jsp</result>
+			<result name="tpmNotFill">/WEB-INF/page/tpmCannotFill.jsp</result>
+			<result name="email">/WEB-INF/page/adminEmail.jsp</result>
+			<result name="ahistory">/WEB-INF/page/adminHistory.jsp</result>
+			<result name="ehistory">/WEB-INF/page/empHistory.jsp</result>
+			<result name="thistory">/WEB-INF/page/tpmHistory.jsp</result>
+			<result name="ehome">/WEB-INF/page/employeeHome.jsp</result>
+			<result name="ahome">/WEB-INF/page/adminHome.jsp</result>
+			<result name="thome">/WEB-INF/page/tpmHome.jsp</result>
+			<result name="adminPie">/WEB-INF/page/adminPieChart.jsp</result>
+			<result name="tpmPie">/WEB-INF/page/tpmPieChart.jsp</result>
+			<result name="BaseTopTen">/WEB-INF/page/BaseTopTen.jsp</result>
+			<result name="CostTopTen">/WEB-INF/page/CostTopTen.jsp</result>
+			<result name="PercentTopTen">/WEB-INF/page/PercentTopTen.jsp</result>
+			<result name="SectionPieChart">/WEB-INF/page/adminSectionPieChart.jsp</result>
+			<result name="guestChart">/WEB-INF/page/guestColumnChart.jsp</result>
+		</action>
+
+		<action name="AllChartAction" class="com.xgg.epd.actions.AllChartAction"
+			method="create">
+			<result name="guestsuccess">/WEB-INF/page/guestColumnChart.jsp</result>
+			<result name="adminsuccess">/WEB-INF/page/adminChart.jsp</result>
+			<result name="tpmsuccess">/WEB-INF/page/showMyChart.jsp</result>
+			<result name="basetopten">/WEB-INF/page/BaseTopTen.jsp</result>
+			<result name="costtopten">/WEB-INF/page/CostTopTen.jsp</result>
+			<result name="percenttopten">/WEB-INF/page/PercentTopTen.jsp</result>
+		</action>
+		
+		<action name="PieChartAction" class="com.xgg.epd.actions.PieChartAction">
+			<result name="adminSuccess">/WEB-INF/page/adminPieChart.jsp</result>
+			<result name="tpmSuccess">/WEB-INF/page/tpmPieChart.jsp</result>
+			<result name="SectionPie">/WEB-INF/page/adminSectionPieChart.jsp</result>
+		</action>
+		<action name="FillAction" class="com.xgg.epd.actions.FillAction">
+			<result name="tpmfillsuccess">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="adminfillsuccess">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="empfillsuccess">/WEB-INF/page/empFillMC.jsp</result>
+			<result name="error">/WEB-INF/page/userLogin.jsp</result>
+		</action>
+		<action name="CopyLastMonthAction" class="com.xgg.epd.actions.CopyLastMonthAction">
+			<result name="tpmcopysuccess">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="admincopysuccess">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="empcopysuccess">/WEB-INF/page/empFillMC.jsp</result>
+		</action>
+		<action name="ChangeLastMonthAction" class="com.xgg.epd.actions.ChangeLastMonthAction">
+			<result name="tpmfillsuccess">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="adminfillsuccess">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="empfillsuccess">/WEB-INF/page/empFillMC.jsp</result>
+		</action>
+		
+		<action name="ManageRecordAction" class="com.xgg.epd.actions.ManageRecordAction">
+			<result name="admindelsuccess">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="tpmdelsuccess">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="empdelsuccess">/WEB-INF/page/empFillMC.jsp</result>
+			<result name="modadmin">/WEB-INF/page/adminModMC.jsp</result>
+			<result name="modtpm">/WEB-INF/page/tpmModMC.jsp</result>
+			<result name="modemp">/WEB-INF/page/empModMC.jsp</result>
+			<result name="adminInsert">/WEB-INF/page/adminShowRec.jsp</result>
+			<result name="tpmInsert">/WEB-INF/page/tpmShowRec.jsp</result>
+			<result name="empInsert">/WEB-INF/page/empShowRec.jsp</result>
+			<result name="soloAddadmin" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="soloAddTPM" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="soloAddemp" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="soloReduceadmin" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="soloReduceTPM" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="soloReduceemp" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="adminChange">/WEB-INF/page/adminFillMC.jsp</result>					
+			<result name="tpmChange">/WEB-INF/page/tpmFillMC.jsp</result>		
+			<result name="empChange">/WEB-INF/page/empFillMC.jsp</result>		
+			
+			<result name="adminShow">/WEB-INF/page/adminHistory.jsp</result>
+			<result name="tpmShow">/WEB-INF/page/tpmHistory.jsp</result>
+			<result name="empShow">/WEB-INF/page/empHistory.jsp</result>
+			<result name="adminPage">/WEB-INF/page/adminHistory.jsp</result>
+			<result name="tpmPage">/WEB-INF/page/tpmHistory.jsp</result>
+			<result name="empPage">/WEB-INF/page/empHistory.jsp</result>
+			<result name="adminRes">/WEB-INF/page/adminShowRec.jsp</result>
+			<result name="tpmRes">/WEB-INF/page/tpmShowRec.jsp</result>
+			<result name="empRes">/WEB-INF/page/empShowRec.jsp</result>
+		</action>
+
+		<action name="UpdateMcAction" class="com.xgg.epd.actions.UpdateMcAction">
+			<result name="tpmsuccess" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="adminsuccess" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="empsuccess" type="chain">
+				<param name="actionName">SplitPageAction</param>
+				<param name="namespace">/</param>
+			</result>
+			<result name="error">/WEB-INF/page/userLogin.jsp</result>
+		</action>
+
+		<action name="RegisterAction" class="com.xgg.epd.actions.RegisterAction">
+			<result name="success">/WEB-INF/page/newEmpInfo.jsp</result>
+			<result name="mod_emp_success" type="chain">
+				<param name="method">showAll</param>
+				<param name="actionName">ShowEmployeeAction</param>
+				<param name="namespace">/</param>
+			</result>
+		</action>
+		<action name="SplitPageAction" class="com.xgg.epd.actions.SplitPageAction">
+			<result name="adminfillsuccess">/WEB-INF/page/adminFillMC.jsp</result>
+			<result name="tpmfillsuccess">/WEB-INF/page/tpmFillMC.jsp</result>
+			<result name="empfillsuccess">/WEB-INF/page/empFillMC.jsp</result>
+		</action>
+		<action name="LoginOutAction" class="com.xgg.epd.actions.LoginOutAction">
+			<result name="success">/WEB-INF/page/userLogin.jsp</result>
+			<result name="error">/WEB-INF/page/userLogin.jsp</result>
+		</action>
+
+		<action name="ShowEmployeeAction" class="com.xgg.epd.actions.ShowEmployeeAction">
+			<result name="success">/WEB-INF/page/adminSearchEmp.jsp</result>
+			<result name="error">/WEB-INF/page/adminSearchEmp.jsp</result>
+			<result name="psuccess">/WEB-INF/page/adminShowPartEmp.jsp</result>
+			<result name="perror">/WEB-INF/page//adminShowPartEmp.jsp</result>
+			<result name="MODEMP">/WEB-INF/page/adminModEmp.jsp</result>
+			<result name="delemp" type="redirectAction">
+				<param name="method">showAll</param>
+				<param name="actionName">ShowEmployeeAction</param>
+				<param name="namespace">/</param> 
+				<param name="pageNow">1</param>
+			</result>
+		</action>
+		
+		<action name="showProjectAction" class="com.xgg.epd.actions.showProjectAction">
+			<result name="success">/WEB-INF/page/adminSearchPro.jsp</result>
+			<result name="error">/WEB-INF/page/adminSearchPro.jsp</result>
+			<result name="psuccess">/WEB-INF/page/adminShowPartPro.jsp</result>
+			<result name="perror">/WEB-INF/page/adminShowPartPro.jsp</result>
+			<result name="MODPRO">/WEB-INF/page/adminModPro.jsp</result>
+			<result name="delpro" type="redirectAction">
+				<param name="method">showAll</param>
+				<param name="actionName">showProjectAction</param>
+				<param name="namespace">/</param> 
+				<param name="pageNow">1</param>
+			</result>
+		</action>
+		
+		<action name="AddServiceNrAction" class="com.xgg.epd.actions.AddServiceNrAction">
+			<result name="success">/WEB-INF/page/adminAddServiceNr.jsp</result>
+			<result name="delSuccess">/WEB-INF/page/adminAddServiceNr.jsp</result>
+		</action>
+		<action name="TpmChangeAction" class="com.xgg.epd.actions.TpmChangeAction">
+			<result name="createoptionsuccess">/WEB-INF/page/adminChart.jsp</result>
+			<result name="createProOfYear">/WEB-INF/page/tpmChart.jsp</result>
+			<result name="pieChart">/WEB-INF/page/adminPieChart.jsp</result>	
+			
+		</action>
+		
+		<action name="SectionChangeAction" class="com.xgg.epd.actions.SectionChangeAction">
+			<result name="createoptionsuccess">/WEB-INF/page/adminCorrect.jsp</result>
+			<result name="createservices">/WEB-INF/page/adminModEmpMC.jsp</result>
+			<result name="showService">/WEB-INF/page/adminAddServiceNr.jsp</result>
+		</action>
+		<action name="TopTenAction" class="com.xgg.epd.actions.TopTenAction">
+			<result name="basetopten">/WEB-INF/page/BaseTopTen.jsp</result>
+			<result name="percenttopten">/WEB-INF/page/PercentTopTen.jsp</result>
+			<result name="costtopten">/WEB-INF/page/CostTopTen.jsp</result>
+		</action>
+		<action name="showMCAction" class="com.xgg.epd.actions.showMCAction">
+			<result name="ok">/WEB-INF/page/adminCorrect.jsp</result>
+			<result name="modOK">/WEB-INF/page/adminModEmpMC.jsp</result>
+			<result name="delok" type="chain">
+			   <param name="method">execute</param>
+			   <param name="actionName">showMCAction</param>
+			   <param name="namespace">/</param>
+			   <param name="sendName">${sendName}</param>
+			   <param name="sendSection">${sendSection}</param>
+			   <param name="sendMonth">${sendMonth}</param>
+			</result>
+		</action>
+		<action name="CheckOldPwdAction" class="com.xgg.epd.actions.CheckOldPwdAction">
+		</action>
+		
+		
+		<action name="ShowBudgetAction" class="com.xgg.epd.actions.ShowBudgetAction">
+			<result name="success">/WEB-INF/page/adminBudget.jsp</result>
+			<result name="addbudget_success">/WEB-INF/page/adminBudget.jsp</result>
+		</action>
+		<action name="ResetPwdAction" class="com.xgg.epd.actions.ResetPwdAction">
+			<result name="success">/WEB-INF/page/success.jsp</result>
+		</action>
+		
+		<action name="AdminUpdateMCAction" class="com.xgg.epd.actions.AdminUpdateMCAction">
+			<result name="success" type="chain">
+				<param name="method">showPart</param>
+				<param name="actionName">showMCAction</param>
+				<param name="namespace">/</param>
+				<param name="sendName">${sendName}</param>
+			   <param name="sendSection">${sendSection}</param>
+			   <param name="sendMonth">${sendMonth}</param>			   
+			</result>
+		</action>
+		<action name="TpmChartAction" class="com.xgg.epd.actions.TpmChartAction">
+			<result name="success">/WEB-INF/page/tpmChart.jsp</result>
+			<result name="guestPng">/WEB-INF/page/guestColumnChart.jsp</result>
+		</action>
+		
+		<action name="CalendarAction" class="com.xgg.epd.actions.CalendarAction">
+			<result name="success">/WEB-INF/page/adminSetCalendar.jsp</result>
+		</action>
+		
+		<action name="WriteIntoExcelAction" class="com.xgg.epd.actions.WriteIntoExcelAction">
+			<result name="success">/WEB-INF/page/adminUpload.jsp</result>
+			<result name="Export_Projects_Success">/WEB-INF/page/adminUpload.jsp</result>
+		</action>
+	</package>
+</struts>

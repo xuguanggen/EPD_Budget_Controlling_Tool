@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE dwr PUBLIC
+    "-//GetAhead Limited//DTD Direct Web Remoting 3.0//EN"
+    "http://getahead.org/dwr/dwr30.dtd">
+<dwr>
+	<allow>
+		<create javascript="myjs" creator="new">
+			<param name="class" value="com.xgg.epd.dao.FindProject" />
+			<include method="getproject" />
+		</create>
+		<convert match="com.xgg.epd.beans.ProjectBean"
+			converter="bean"></convert>
+	</allow>
+</dwr>

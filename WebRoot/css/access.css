@@ -1,0 +1,87 @@
+<style type    ="text /css">
+<!--
+#content {
+	font-family: Arial;
+}
+
+.apply {
+	border: 0px gray solid;
+	margin: 0 auto;
+	font-size: 13px;
+	font-family: Arial;
+}
+
+.head {
+	height: 50px;
+	background-color: #F2F2F2;
+	font-size: 16px;
+	color: #003b69;
+}
+
+.title {
+	text-align: center;
+	font-weight: bold;
+	font-size: 15px;
+}
+
+.button {
+	background-color: #295D89;
+	width: 140px;
+	color: white;
+	text-align: center;
+}
+
+.line {
+	border-top: 1px #295D89 solid;
+}
+
+.accessTitle {
+	border: 0px red solid;
+	width: 120px;
+	text-align: center;
+	margin: -190px 0 0 60px;
+	background-color: white;
+}
+
+.access {
+	border: 1px #cccccc solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 20px auto;
+	width: 90%;
+}
+
+.reasonTitle {
+	border: 0px red solid;
+	width: 120px;
+	text-align: center;
+	margin: -285px 0 0 60px;
+	background-color: white;
+}
+
+.reason {
+	border: 1px #cccccc solid;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin: 175px auto;
+	width: 90%;
+}
+.submit {
+	border: 0px #cccccc solid;
+	margin: 100px auto;
+	text-align: right;
+	width: 90%;
+}
+.apply table tr {
+	font-size: 13px;
+}
+
+.formFieldError {
+	font-family: arial;
+	font-size: 13px;
+	color: #FF3300;
+	width: 90%;
+	margin-top:-80px;
+}
+-->
+</style>
